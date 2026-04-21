@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FadeIn } from "./motion";
 import { Code2, Server, Layers } from "lucide-react";
 
@@ -36,29 +37,40 @@ export function About() {
 
         <div className="mt-8 grid lg:grid-cols-2 gap-12 items-start">
           <FadeIn delay={0.1}>
-            <div className="space-y-4 text-muted leading-relaxed">
-              <p>
-                Tenho +4 anos trabalhando com JavaScript/TypeScript. A maior
-                parte desse tempo foi em{" "}
-                <span className="text-foreground">
-                  fintechs e sistemas financeiros
-                </span>
-                 — dashboards de compliance, plataformas de investimento, esse
-                tipo de coisa.
-              </p>
-              <p>
-                Já passei por{" "}
-                <span className="text-foreground">Compliance/Risco</span>,{" "}
-                <span className="text-foreground">Web3/Blockchain</span> e{" "}
-                <span className="text-foreground">Agro/Investimentos</span>.
-                Em todas eu mexia tanto no front quanto no back, então acabei
-                pegando uma boa noção do fluxo inteiro.
-              </p>
-              <p>
-                Gosto de entender o contexto do que estou construindo, não só
-                receber ticket e codar. Isso me ajuda a tomar decisões melhores
-                no dia a dia.
-              </p>
+            <div>
+              <div className="relative w-40 h-40 rounded-2xl overflow-hidden border-2 border-border glow mb-6">
+                <Image
+                  src="/photo.jpeg"
+                  alt="Thiago Minguim"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+              <div className="space-y-4 text-muted leading-relaxed">
+                <p>
+                  Tenho +4 anos trabalhando com JavaScript/TypeScript. A maior
+                  parte desse tempo foi em{" "}
+                  <span className="text-foreground">
+                    fintechs e sistemas financeiros
+                  </span>
+                   — dashboards de compliance, plataformas de investimento, esse
+                  tipo de coisa.
+                </p>
+                <p>
+                  Já passei por{" "}
+                  <span className="text-foreground">Compliance/Risco</span>,{" "}
+                  <span className="text-foreground">Web3/Blockchain</span> e{" "}
+                  <span className="text-foreground">Agro/Investimentos</span>.
+                  Em todas eu mexia tanto no front quanto no back, então acabei
+                  pegando uma boa noção do fluxo inteiro.
+                </p>
+                <p>
+                  Gosto de entender o contexto do que estou construindo, não só
+                  receber ticket e codar. Isso me ajuda a tomar decisões melhores
+                  no dia a dia.
+                </p>
+              </div>
             </div>
           </FadeIn>
 
