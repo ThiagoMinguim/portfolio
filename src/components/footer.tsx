@@ -1,12 +1,9 @@
 export function Footer() {
   return (
-    <footer className="py-8 px-6 border-t border-border">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-muted">
+    <footer className="py-10 px-6">
+      <div className="max-w-2xl mx-auto">
+        <p className="text-xs text-muted opacity-50">
           © {new Date().getFullYear()} Thiago Minguim
-        </p>
-        <p className="text-sm text-muted">
-          Next.js + Tailwind + Framer Motion
         </p>
       </div>
     </footer>
