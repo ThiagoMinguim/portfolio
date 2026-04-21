@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { FadeIn } from "./motion";
 import { Code2, Server, Layers } from "lucide-react";
 
@@ -38,15 +37,6 @@ export function About() {
         <div className="mt-8 grid lg:grid-cols-2 gap-12 items-start">
           <FadeIn delay={0.1}>
             <div>
-              <div className="relative w-40 h-40 rounded-2xl overflow-hidden border-2 border-border glow mb-6">
-                <Image
-                  src="/photo.jpeg"
-                  alt="Thiago Minguim"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
-              </div>
               <div className="space-y-4 text-muted leading-relaxed">
                 <p>
                   Tenho +4 anos trabalhando com JavaScript/TypeScript. A maior

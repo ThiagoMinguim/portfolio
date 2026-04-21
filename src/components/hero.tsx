@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 
@@ -30,6 +31,23 @@ export function Hero() {
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-[120px]" />
 
       <div className="relative max-w-4xl mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mb-6"
+        >
+          <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-border">
+            <Image
+              src="/photo.jpeg"
+              alt="Thiago Minguim"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
