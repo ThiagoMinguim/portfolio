@@ -1,66 +1,86 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 const experiences = [
   {
     company: "DoubleCheck",
-    role: "Full-Stack",
-    period: "2024 — 2026",
+    role: "Dev full-stack",
+    period: "Mai 2024 — Mar 2026",
     description:
-      "Plataforma de compliance e gestão de riscos. React/UmiJS no front, Node.js no back, tudo via APIs REST.",
-    tech: ["React.js", "UmiJS", "Node.js", "TypeScript", "Dva.js", "Ant Design"],
+      "Módulos de Compliance e Gestão de Risco. Dashboard pesado, muito estado pra sincronizar, integração com Node.",
+    tech: ["React", "TypeScript", "UmiJS", "Dva.js", "Ant Design", "Node.js"],
   },
   {
     company: "Klever",
-    role: "Full-Stack",
-    period: "2022 — 2024",
+    role: "Dev full-stack",
+    period: "Abr 2022 — Fev 2024",
     description:
-      "Extensão de navegador pra cripto. Fazia a UI e a integração com smart contracts e redes Blockchain.",
-    tech: ["React", "Next.js", "TypeScript", "Web3", "Tailwind CSS"],
+      "Extensão de navegador da Klever, tipo MetaMask mas pra rede Klever e outras blockchains. Foco em UI rápida e segura conversando com smart contract.",
+    tech: ["React", "Next.js", "TypeScript", "Web3", "Tailwind"],
   },
   {
     company: "Ceres Investimentos",
-    role: "Full-Stack",
-    period: "2021 — 2022",
+    role: "Dev full-stack",
+    period: "Mai 2021 — Abr 2022",
     description:
-      "Dashboards de dados financeiros (CRAs e FIDCs). Integração de APIs e interfaces com Vue.js e Nuxt.js.",
-    tech: ["Vue.js", "Nuxt.js", "React.js", "Next.js", "Vuetify"],
+      "Dashboards de CRA e FIDC pros investidores. Primeiro trampo real na área, onde aprendi Git em time, PR e code review na marra.",
+    tech: ["Vue.js", "Nuxt.js", "Vuetify", "Material UI"],
   },
 ];
 
 export function Experience() {
   return (
-    <section id="experiencia" className="py-10 px-6">
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-lg font-semibold mb-8">Experiência</h2>
+    <section id="experiencia" className="py-12 px-6">
+      <div className="max-w-3xl mx-auto">
+        <div className="border-t border-border" />
 
-        <div className="space-y-8">
-          {experiences.map((exp) => (
-            <div key={exp.company}>
-              <div className="flex items-baseline justify-between gap-4 mb-1">
-                <div className="flex items-baseline gap-2">
-                  <h3 className="font-medium">{exp.company}</h3>
-                  <span className="text-sm text-muted">· {exp.role}</span>
-                </div>
-                <span className="text-sm text-muted shrink-0">{exp.period}</span>
-              </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.4 }}
+        >
+          <p className="text-[13px] font-medium uppercase tracking-[0.08em] text-muted mt-10 mb-8">
+            Experiência
+          </p>
 
-              <p className="text-sm text-muted leading-relaxed mb-2">
-                {exp.description}
-              </p>
-
-              <div className="flex flex-wrap gap-1.5">
-                {exp.tech.map((t) => (
-                  <span
-                    key={t}
-                    className="text-xs text-muted opacity-60"
-                  >
-                    {t}{exp.tech.indexOf(t) < exp.tech.length - 1 ? " ·" : ""}
+          <div>
+            {experiences.map((exp, i) => (
+              <div
+                key={exp.company}
+                className={i > 0 ? "border-t border-border pt-6 mt-6" : ""}
+              >
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1.5">
+                  <div className="flex items-baseline gap-1.5">
+                    <h3 className="font-medium">{exp.company}</h3>
+                    <span className="text-[14px] text-muted">
+                      — {exp.role}
+                    </span>
+                  </div>
+                  <span className="text-[13px] text-tertiary shrink-0">
+                    {exp.period}
                   </span>
-                ))}
+                </div>
+
+                <p className="text-[14px] text-muted leading-relaxed mb-3">
+                  {exp.description}
+                </p>
+
+                <div className="flex flex-wrap gap-1.5">
+                  {exp.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="px-2.5 py-0.5 text-[12px] rounded-md border border-border text-muted bg-background"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

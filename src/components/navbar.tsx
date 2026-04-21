@@ -4,8 +4,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Projetos", href: "#projetos" },
+  { label: "Sobre", href: "#sobre" },
   { label: "Experiência", href: "#experiencia" },
+  { label: "Projetos", href: "#projetos" },
+  { label: "Stack", href: "#stack" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -13,10 +15,10 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
-      <nav className="max-w-2xl mx-auto px-6 h-14 flex items-center justify-between">
-        <a href="#" className="text-sm font-medium text-foreground">
-          TM
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/50">
+      <nav className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+        <a href="#" className="text-[14px] font-medium text-foreground">
+          Thiago Minguim
         </a>
 
         <div className="hidden sm:flex items-center gap-6">
@@ -24,7 +26,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted hover:text-foreground transition-colors"
+              className="text-[14px] text-muted hover:text-foreground transition-colors"
             >
               {link.label}
             </a>
@@ -47,7 +49,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-sm text-muted hover:text-foreground"
+              className="text-[14px] text-muted hover:text-foreground"
             >
               {link.label}
             </a>

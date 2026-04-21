@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Thiago Minguim",
-  description: "Desenvolvedor Full-Stack — JavaScript / TypeScript",
+  description: "Dev full-stack — JavaScript / TypeScript",
 };
 
 export default function RootLayout({
@@ -15,11 +15,13 @@ export default function RootLayout({
     <html lang="pt-BR" className="h-full antialiased">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full font-sans">{children}</body>
+      <body className="min-h-full font-sans text-[15px] leading-[1.65]">
+        {children}
+      </body>
     </html>
   );
 }
