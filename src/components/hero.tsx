@@ -35,14 +35,14 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="mb-6"
+          className="mb-8"
         >
-          <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-border">
+          <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden ring-2 ring-white/10">
             <Image
               src="/photo.jpeg"
               alt="Thiago Minguim"
               fill
-              className="object-cover object-top"
+              className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
               priority
             />
           </div>
