@@ -15,31 +15,31 @@ const projects = [
   {
     title: "Compliance Dashboard",
     description:
-      "Plataforma de gestão de riscos e compliance com dashboards interativos para tomada de decisão em tempo real. Sistema complexo de estado com Redux/Sagas e visualização analítica de dados.",
+      "Painel pra equipe de compliance acompanhar riscos e tomar decisões. Tinha bastante estado pra gerenciar (Redux/Sagas) e muita tabela com filtro e gráfico.",
     tech: ["React.js", "UmiJS", "TypeScript", "Dva.js", "Ant Design", "Node.js"],
-    type: "Profissional — DoubleCheck",
+    type: "DoubleCheck",
     private: true,
   },
   {
     title: "Klever Browser Extension",
     description:
-      "Extensão de navegador para interação com redes Blockchain e contratos inteligentes. Arquitetura de comunicação segura entre UI e smart contracts com foco em performance.",
+      "Extensão de navegador pra mexer com cripto — enviar, receber, interagir com smart contracts. Eu fazia a UI e a integração com as redes Blockchain.",
     tech: ["React", "Next.js", "TypeScript", "Web3", "Tailwind CSS"],
-    type: "Profissional — Klever",
+    type: "Klever",
     private: true,
   },
   {
-    title: "Fintech Analytics Platform",
+    title: "Painel de Investimentos",
     description:
-      "Dashboards de análise financeira para CRAs e FIDCs, com integração de APIs REST para exibição de dados em tempo real. Interfaces dinâmicas focadas em usabilidade.",
+      "Dashboards pra acompanhar CRAs e FIDCs. Puxava dados de várias APIs e montava os gráficos e tabelas que os analistas usavam no dia a dia.",
     tech: ["Vue.js", "Nuxt.js", "Vuetify", "APIs REST"],
-    type: "Profissional — Ceres Investimentos",
+    type: "Ceres Investimentos",
     private: true,
   },
   {
-    title: "Portfolio Pessoal",
+    title: "Este portfólio",
     description:
-      "Este portfólio que você está vendo agora. Construído com Next.js, Tailwind CSS e Framer Motion. Design minimalista com foco em performance e acessibilidade.",
+      "O site que você está vendo. Next.js, Tailwind e Framer Motion. Código aberto no GitHub.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/ThiagoMinguim/portfolio",
     type: "Pessoal",
@@ -52,15 +52,12 @@ export function Projects() {
     <section id="projetos" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <p className="text-accent-light text-sm font-mono mb-3">
-            // projetos
-          </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            O que eu <span className="gradient-text">construí</span>
+            <span className="gradient-text">Projetos</span>
           </h2>
           <p className="mt-4 text-muted max-w-2xl">
-            A maioria dos projetos que trabalhei são privados por conta das
-            empresas, mas aqui está o impacto que entreguei em cada um.
+            Os projetos profissionais são privados, mas dá pra ter uma ideia
+            do que rolou em cada um.
           </p>
         </FadeIn>
 

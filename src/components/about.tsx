@@ -8,19 +8,19 @@ const highlights = [
     icon: Code2,
     title: "Front-End",
     description:
-      "Interfaces de alta performance com React, Next.js e Vue.js. Dashboards interativos e UIs complexas para tomada de decisão.",
+      "React, Next.js, Vue.js — dashboards, painéis administrativos e interfaces que lidam com muitos dados sem travar.",
   },
   {
     icon: Server,
     title: "Back-End",
     description:
-      "APIs RESTful robustas com Node.js. Integração de sistemas, arquitetura de dados e fluxos seguros de informação.",
+      "Node.js e APIs REST. Já integrei desde serviços internos até sistemas de terceiros com regras de negócio pesadas.",
   },
   {
     icon: Layers,
     title: "Full-Stack",
     description:
-      "Visão end-to-end do produto. Do design técnico ao deploy, passando por arquitetura, performance e qualidade de código.",
+      "Consigo pegar uma feature do banco de dados até o botão na tela. Menos dependência entre times, entrega mais rápida.",
   },
 ];
 
@@ -29,10 +29,8 @@ export function About() {
     <section id="sobre" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <p className="text-accent-light text-sm font-mono mb-3">// sobre mim</p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Construindo software que{" "}
-            <span className="gradient-text">faz a diferença</span>
+            Quem sou <span className="gradient-text">eu</span>
           </h2>
         </FadeIn>
 
@@ -40,26 +38,26 @@ export function About() {
           <FadeIn delay={0.1}>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                Sou desenvolvedor Full-Stack com mais de 4 anos de experiência,
-                especializado no ecossistema JavaScript/TypeScript. Minha
-                trajetória é focada na criação de{" "}
+                Tenho +4 anos trabalhando com JavaScript/TypeScript. A maior
+                parte desse tempo foi em{" "}
                 <span className="text-foreground">
-                  sistemas financeiros de alta complexidade
+                  fintechs e sistemas financeiros
                 </span>
-                , onde precisão e performance são essenciais.
+                 — dashboards de compliance, plataformas de investimento, esse
+                tipo de coisa.
               </p>
               <p>
-                Já atuei em empresas nos mercados de{" "}
-                <span className="text-foreground">Compliance</span>,{" "}
+                Já passei por{" "}
+                <span className="text-foreground">Compliance/Risco</span>,{" "}
                 <span className="text-foreground">Web3/Blockchain</span> e{" "}
-                <span className="text-foreground">Agro/Investimentos</span>,
-                sempre entregando soluções escaláveis com código limpo e
-                arquitetura bem pensada.
+                <span className="text-foreground">Agro/Investimentos</span>.
+                Em todas eu mexia tanto no front quanto no back, então acabei
+                pegando uma boa noção do fluxo inteiro.
               </p>
               <p>
-                Meu diferencial é a capacidade de transitar entre front e back
-                com fluência, entendendo o produto de ponta a ponta e tomando
-                decisões técnicas que impactam diretamente o negócio.
+                Gosto de entender o contexto do que estou construindo, não só
+                receber ticket e codar. Isso me ajuda a tomar decisões melhores
+                no dia a dia.
               </p>
             </div>
           </FadeIn>

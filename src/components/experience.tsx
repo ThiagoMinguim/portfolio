@@ -9,11 +9,11 @@ const experiences = [
     role: "Desenvolvedor Full-Stack",
     period: "Mai 2024 — Mar 2026",
     description:
-      "Desenvolvimento end-to-end de módulos críticos de Compliance e Gestão de Riscos, integrando React.js/UmiJS com APIs RESTful em Node.js.",
+      "Plataforma de compliance e gestão de riscos. Eu cuidava do front com React/UmiJS e do back com Node.js, tudo conectado via APIs REST.",
     highlights: [
-      "Arquitetura de estado complexo com TypeScript e Dva.js (Redux/Sagas)",
-      "Dashboards interativos para visualização analítica de dados",
-      "Integração segura entre client-side e lógica de negócios no servidor",
+      "Gerenciamento de estado com Dva.js (Redux/Sagas) em fluxos bem pesados",
+      "Construí os dashboards que o time de compliance usava pra tomar decisão",
+      "Conectei o front com a lógica de negócio do servidor de ponta a ponta",
     ],
     tech: ["React.js", "UmiJS", "Node.js", "TypeScript", "Dva.js", "Ant Design"],
   },
@@ -22,11 +22,11 @@ const experiences = [
     role: "Desenvolvedor Full-Stack",
     period: "Abr 2022 — Fev 2024",
     description:
-      "Arquitetura de comunicação entre interfaces seguras e contratos inteligentes / redes Blockchain em extensão de navegador.",
+      "Extensão de navegador pra interagir com Blockchain. Fazia a ponte entre a interface em React/Next.js e os smart contracts.",
     highlights: [
-      "Integração Web3 com smart contracts e redes Blockchain",
-      "Soluções escaláveis e de alta performance com TypeScript",
-      "Code reviews focadas em crescimento sustentável do ecossistema",
+      "Integrei a UI com smart contracts e redes Blockchain",
+      "Otimizei performance da extensão usando TypeScript e Tailwind",
+      "Participei ativamente de code reviews e decisões de arquitetura",
     ],
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Web3", "Blockchain"],
   },
@@ -35,11 +35,11 @@ const experiences = [
     role: "Desenvolvedor Full-Stack",
     period: "Mai 2021 — Abr 2022",
     description:
-      "Construção de dashboards complexos e integração de APIs REST para exibição de dados financeiros de CRAs e FIDCs.",
+      "Dashboards pra visualização de dados financeiros (CRAs e FIDCs). Trabalhei junto com o time de dados e backend na integração das APIs.",
     highlights: [
-      "Modelagem e consumo de APIs REST para dados financeiros",
-      "Interfaces dinâmicas com Vue.js (Composition API) e Nuxt.js",
-      "Consistência visual com Vuetify e Material UI em ambiente ágil",
+      "Integrei APIs REST pra puxar e exibir dados financeiros",
+      "Montei interfaces com Vue.js (Composition API) e Nuxt.js",
+      "Usei Vuetify e Material UI pra manter o padrão visual do produto",
     ],
     tech: ["Vue.js", "Nuxt.js", "React.js", "Next.js", "Vuetify", "Material UI"],
   },
@@ -50,11 +50,8 @@ export function Experience() {
     <section id="experiencia" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <p className="text-accent-light text-sm font-mono mb-3">
-            // experiência
-          </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Onde já <span className="gradient-text">deixei minha marca</span>
+            Por onde <span className="gradient-text">passei</span>
           </h2>
         </FadeIn>
 
@@ -97,7 +94,7 @@ export function Experience() {
                           className="flex items-start gap-2 text-sm text-muted"
                         >
                           <span className="text-accent mt-1.5 shrink-0">
-                            ▹
+                            —
                           </span>
                           {h}
                         </li>

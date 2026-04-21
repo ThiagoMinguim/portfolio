@@ -40,9 +40,8 @@ export function Skills() {
     <section id="skills" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
-          <p className="text-accent-light text-sm font-mono mb-3">// skills</p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Meu <span className="gradient-text">arsenal técnico</span>
+            <span className="gradient-text">Tecnologias</span>
           </h2>
         </FadeIn>
 

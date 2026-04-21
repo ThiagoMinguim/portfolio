@@ -52,15 +52,12 @@ export function Contact() {
     <section id="contato" className="py-32 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <FadeIn>
-          <p className="text-accent-light text-sm font-mono mb-3">
-            // contato
-          </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Vamos <span className="gradient-text">trabalhar juntos</span>?
+            <span className="gradient-text">Contato</span>
           </h2>
           <p className="mt-4 text-muted max-w-lg mx-auto leading-relaxed">
-            Estou sempre aberto a novos desafios e oportunidades. Se você tem um
-            projeto interessante ou quer bater um papo, me manda uma mensagem.
+            Quer trocar uma ideia? Me chama por e-mail ou LinkedIn que eu
+            respondo rápido.
           </p>
         </FadeIn>
 
